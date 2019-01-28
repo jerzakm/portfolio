@@ -7,7 +7,8 @@ $colors: (
     primary-lighter: rgb(255, 124, 124),
     text-light: #FFFFFF,
     text-dark: #212121,
-    text-dark-lighter: #757575
+    text-dark-lighter: #757575,
+    background-light: #FFFFFF
 );
 
 
@@ -31,7 +32,7 @@ body {
     background: color(darkest);    
     font-family: 'Karla', sans-serif;    
     font-size: 1rem;
-    color: color(text-light);        
+    color: color(background-light);        
 }
 
 .content-box {
@@ -48,13 +49,16 @@ burger {
 }
 
 #bg-container {
-    position: fixed;        
+    position: absolute;        
     width: 100vw;
     height: 100vh;
     top: 0vh;
-    left: 20vw;
+    left: 0vw;
     width: 100vw;
     height: 100vh;    
+    transform: rotate(0deg);
+    transform: scale(1);
+
     
     .bg {
         position: absolute;        
@@ -68,10 +72,10 @@ burger {
         border-top-left-radius: 50%;        
         border-bottom-right-radius: 50%;                
         border-top-right-radius: 50%;                
-        width: 130vw;
-        height: 60vh;
-        top: 30vh;
-        left: -1vw;
+        width: 2249px;
+        height: 525px;
+        top: 263px;
+        left: -18px;
         transform: rotate(-33deg);
         z-index: -2;
     }
@@ -82,10 +86,10 @@ burger {
         border-top-left-radius: 50%;        
         border-bottom-right-radius: 50%;                
         border-top-right-radius: 50%;                
-        width: 130vw;
-        height: 50vh;
-        top: 15vh;
-        left: 11vw;
+        width: 2249px;
+        height: 438px;
+        top: 150px;
+        left: 190px;
         transform: rotate(-32deg);
         z-index: -1;
     }        
@@ -96,10 +100,10 @@ burger {
         border-top-left-radius: 50%;        
         border-bottom-right-radius: 50%;                
         border-top-right-radius: 50%;                
-        width: 130vw;
-        height: 60vh;
-        top: 30vh;
-        left: -20vw;
+        width: 2249px;
+        height: 525px;
+        top: 263px;
+        left: -348px;
         transform: rotate(-33deg);
         z-index: -4;
     }
@@ -110,10 +114,10 @@ burger {
         border-top-left-radius: 50%;        
         border-bottom-right-radius: 50%;                
         border-top-right-radius: 50%;                
-        width: 130vw;
-        height: 50vh;
-        top: 15vh;
-        left: -5vw;
+        width: 2249px;
+        height: 438px;
+        top: 131px;
+        left: -87px;
         transform: rotate(-33deg);
         z-index: -3;
     } 
@@ -124,10 +128,10 @@ burger {
         border-top-left-radius: 50%;        
         border-bottom-right-radius: 50%;                
         border-top-right-radius: 50%;                
-        width: 130vw;
-        height: 60vh;
-        top: 30vh;
-        left: -40vw;
+        width: 2249px;
+        height: 525px;
+        top: 263px;
+        left: -692px;
         transform: rotate(-33deg);
         z-index: -6;
     }
@@ -137,8 +141,8 @@ burger {
         border-top-left-radius: 50%;        
         border-bottom-right-radius: 50%;                
         border-top-right-radius: 50%;                
-        width: 130vw;
-        height: 50vh;
+        width: 2249px;
+        height: 438px;
         top: 15vh;
         left: -25vw;
         transform: rotate(-33deg);
