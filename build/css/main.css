@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css?family=Karla|Space+Mono");
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #222222;
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+  color: #FFFFFF;
+}
+
+.content-box {
+  z-index: 2;
+}
+
+burger {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  z-index: 9;
+  font-size: 2.7rem;
+  color: #ff7c7c;
+}
+
+#bg-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0vh;
+  left: 20vw;
+  width: 100vw;
+  height: 100vh;
+}
+
+#bg-container .bg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+#bg-container #landing-bg1 {
+  background: #F44336;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  width: 130vw;
+  height: 60vh;
+  top: 30vh;
+  left: -1vw;
+  -webkit-transform: rotate(-33deg);
+          transform: rotate(-33deg);
+  z-index: -2;
+}
+
+#bg-container #landing-bg2 {
+  background: #212121;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  width: 130vw;
+  height: 50vh;
+  top: 15vh;
+  left: 11vw;
+  -webkit-transform: rotate(-32deg);
+          transform: rotate(-32deg);
+  z-index: -1;
+}
+
+#bg-container #landing-bg3 {
+  background: #FF5252;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  width: 130vw;
+  height: 60vh;
+  top: 30vh;
+  left: -20vw;
+  -webkit-transform: rotate(-33deg);
+          transform: rotate(-33deg);
+  z-index: -4;
+}
+
+#bg-container #landing-bg4 {
+  background: #212121;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  width: 130vw;
+  height: 50vh;
+  top: 15vh;
+  left: -5vw;
+  -webkit-transform: rotate(-33deg);
+          transform: rotate(-33deg);
+  z-index: -3;
+}
+
+#bg-container #landing-bg5 {
+  background: #ff7c7c;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  width: 130vw;
+  height: 60vh;
+  top: 30vh;
+  left: -40vw;
+  -webkit-transform: rotate(-33deg);
+          transform: rotate(-33deg);
+  z-index: -6;
+}
+
+#bg-container #landing-bg6 {
+  background: #212121;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  width: 130vw;
+  height: 50vh;
+  top: 15vh;
+  left: -25vw;
+  -webkit-transform: rotate(-33deg);
+          transform: rotate(-33deg);
+  z-index: -5;
+}
+
+#landing {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#landing #hello {
+  position: relative;
+  padding: 10px;
+  font-size: 10rem;
+  margin: -5% 0;
+}
+
+#landing #hello p {
+  font-size: 1.2rem;
+}
+
+#landing #hello #landing-name {
+  font-family: 'Space Mono', monospace;
+  font-size: 3rem;
+}
+
+#landing #hello a {
+  color: white;
+}
+
+#content {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#content p {
+  font-size: 1.3rem;
+}
+
+#content .skillcards {
+  width: 66vw;
+}
+
+#content .skillcards div {
+  background-color: #222222;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #F44336;
+  border-radius: 10px;
+  width: auto;
+  margin: 5px;
+  padding: 10px;
+}
+
+#content .skillcards div i {
+  padding-left: 15px;
+  font-size: 2.5rem;
+}
+/*# sourceMappingURL=main.css.map */
