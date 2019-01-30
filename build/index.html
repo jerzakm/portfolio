@@ -13,43 +13,57 @@
         <i class="fas fa-bars"></i>
     </burger>
        
-    
-    <section id ="landing">
-        <div id="bg-container">
-            <div id="landing-bg1" class="bg"></div>
-            <div id="landing-bg2" class="bg"></div>
-            <div id="landing-bg3" class="bg"></div>
-            <div id="landing-bg4" class="bg"></div>
-            <div id="landing-bg5" class="bg"></div>
-            <div id="landing-bg6" class="bg"></div>
-        </div>                
+    <main class="wrapper">
+        <section id ="landing">
+            <div id="bg-container">
+                <div id="landing-bg1" class="bg"></div>
+                <div id="landing-bg2" class="bg"></div>
+                <div id="landing-bg3" class="bg"></div>
+                <div id="landing-bg3-helper" class="bg"></div>
+                <div id="landing-bg4" class="bg"></div>
+                <div id="landing-bg4-helper" class="bg"></div>
+                <div id="landing-bg5" class="bg"></div>
+                <div id="landing-bg6" class="bg"></div>
+            </div>                
 
-        <div class="content-box" id="hello">
-                hello <strong>world</strong>
-                <div id="landing-name">
-                    i'm Marcin
-                    <p>and in case you couldn't tell by this font, I do tech stuff</p>
-                    <p>Check it out below or go directly to my Github</p>
-                    <a href="https://github.com/jerzakm" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>                
-        </div>                
-    </section>
+            <div class="content-box" id="hello">
+                    hello <strong>world</strong>
+                    <div id="landing-name">
+                        i'm Marcin
+                        <p>and in case you couldn't tell by this font, I do tech stuff</p>
+                        <p>Check it out below or go directly to my Github</p>
+                        <a href="https://github.com/jerzakm" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>                
+            </div>                
+        </section>        
 
-    <section id="content">
-        <div class="content-box">
-            <div class="skillcards">
-                <div>
-                    <i class="fab fa-java"></i>                    
-                    <i class="fab fa-js"></i>
-                    <i class="fab fa-node"></i>
-                    <i class="fab fa-aws"></i>
-                    <i class="fab fa-html5"></i>
-                </div>                                
-            </div>
-        </div>
-    </section>
+        <section id="content">
+            <div id="projects">                        
+                <div class="section-title">/ featured projects</div>                           
+                
+                <div id="project-box-wrapper">
+                   <div class="project-box">
+                       <div class="project-box-title">allegro.pl API client for Java</div>                       
+                       <div class="project-box-description">
+                            <p>Java wrapper for allegro.pl REST API created to practice my documentation and Java skills and fill specific use cases in my other projects.</p>
+                       </div>                       
+                       <div class="project-box-stats">
+                           Last updated: 18 hours ago
+                       </div>
+                       <div class="project-box-tags">
+                            <span class="primary-skill-tag">Java</span>                            
+                            <span class="secondary-skill-tag">Docs</span>                                                        
+                            <span class="tetriary-skill-tag">REST</span>                            
+                       </div>
+                   </div>                                   
+                </div>
+                <div class="section-title">see more</div>  
+            </div>            
+        </section>
+
+    </main>
     
     <script>
         if('serviceWorker' in navigator) {
