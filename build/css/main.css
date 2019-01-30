@@ -158,6 +158,16 @@ burger {
   z-index: -5;
 }
 
+#content #projects .project-box .project-box-tags span, #content #projects .project-box .project-box-more .project-box-links {
+  padding: 2px;
+  padding-left: 9px;
+  padding-right: 11px;
+  border-radius: 50px;
+  font-family: 'Space Mono', monospace;
+  font-size: 1rem;
+  color: #FFFFFF;
+}
+
 .content-box {
   z-index: 2;
 }
@@ -270,22 +280,13 @@ burger {
   font-weight: bold;
 }
 
-#content #projects .project-box .project-box-stats {
-  font-size: 0.8rem;
+#content #projects .project-box .project-box-description {
+  margin-bottom: 0px;
 }
 
 #content #projects .project-box .project-box-tags {
   font-size: 1.3rem;
-  color: #FFFFFF;
-}
-
-#content #projects .project-box .project-box-tags span {
-  padding: 2px;
-  padding-left: 9px;
-  padding-right: 11px;
-  border-radius: 50px;
-  font-family: 'Space Mono', monospace;
-  font-size: 1rem;
+  margin-top: 0px;
 }
 
 #content #projects .project-box .project-box-tags .primary-skill-tag {
@@ -298,5 +299,54 @@ burger {
 
 #content #projects .project-box .project-box-tags .tetriary-skill-tag {
   background-color: #e9e3e3;
+}
+
+#content #projects .project-box .project-box-stats {
+  margin-top: -15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+#content #projects .project-box .project-box-stats .updated {
+  font-size: 0.6rem;
+  padding-right: 5px;
+}
+
+#content #projects .project-box .project-box-more {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+#content #projects .project-box .project-box-more .updated {
+  font-size: 0.6rem;
+  padding-right: 5px;
+}
+
+#content #projects .project-box .project-box-more .project-box-links {
+  background-color: #222222;
+  margin-left: 0.3rem;
 }
 /*# sourceMappingURL=main.css.map */

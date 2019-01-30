@@ -3,6 +3,16 @@
 @import "style/bg";
 @import "style/landing";
 
+%pill {
+    padding: 2px;                    
+    padding-left: 9px;
+    padding-right: 11px;
+    border-radius: 50px;                    
+    font-family: 'Space Mono', monospace;                
+    font-size: 1rem;     
+    color: color(text-light);
+}
+
 
 .content-box {
     z-index: 2;
@@ -86,19 +96,14 @@
                 font-size: 1.3rem;
                 font-weight: bold;                                
             }
-            .project-box-stats {
-                font-size: 0.8rem;                             
+            .project-box-description {
+                margin-bottom: 0px;
             }
             .project-box-tags {
-                font-size: 1.3rem;
-                color: color(text-light);
-                span {                    
-                    padding: 2px;                    
-                    padding-left: 9px;
-                    padding-right: 11px;
-                    border-radius: 50px;                    
-                    font-family: 'Space Mono', monospace;                
-                    font-size: 1rem;                                                
+                font-size: 1.3rem;                
+                margin-top: 0px;
+                span {                                        
+                    @extend %pill;                                               
                 }
                 .primary-skill-tag{
                     background-color: color(primary-light);
@@ -109,7 +114,36 @@
                 .tetriary-skill-tag{
                     background-color: color(contour);
                 }        
-            }                        
+            }      
+            .project-box-stats{                
+                margin-top: -15px;
+                display: flex;    
+                flex-direction: row;
+                justify-content: flex-end;    
+                align-items: baseline;
+                .updated {
+                    font-size: 0.6rem;
+                    padding-right: 5px;
+                }                
+            }      
+            .project-box-more {
+                width: 85%;
+                //margin-top: -15px;
+                display: flex;    
+                flex-direction: row;
+                justify-content: flex-end;    
+                align-items: baseline;
+                .updated {
+                    font-size: 0.6rem;
+                    padding-right: 5px;
+                }             
+                .project-box-links {
+                    @extend %pill;
+                    background-color: color(darkest);
+                    //margin-right: 3rem;
+                    margin-left: 0.3rem;
+                }                
+            }            
         }
     }    
 }
