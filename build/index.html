@@ -12,64 +12,96 @@
     <burger>
         <i class="fas fa-bars"></i>
     </burger>
-       
-    <main class="wrapper">
-        <section id ="landing">
-            <div id="bg-container">
-                <div id="landing-bg1" class="bg"></div>
-                <div id="landing-bg2" class="bg"></div>
-                <div id="landing-bg3" class="bg"></div>
-                <div id="landing-bg3-helper" class="bg"></div>
-                <div id="landing-bg4" class="bg"></div>
-                <div id="landing-bg4-helper" class="bg"></div>
-                <div id="landing-bg5" class="bg"></div>
-                <div id="landing-bg6" class="bg"></div>
-            </div>                
-
-            <div class="content-box" id="hello">
-                    hello <strong>world</strong>
-                    <div id="landing-name">
-                        i'm Marcin
-                        <p>and in case you couldn't tell by this font, I do tech stuff</p>
-                        <p>Check it out below or go directly to my Github</p>
-                        <a href="https://github.com/jerzakm" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>                
-            </div>                
-        </section>        
-
-        <section id="content">
-            <div id="projects">                        
-                <div class="section-title">/ featured projects</div>                           
-                
-                <div id="project-box-wrapper">
-                   <div class="project-box">
-                       <div class="project-box-title">allegro.pl API client for Java</div>                       
-                       <div class="project-box-description">
-                            <p>Java wrapper for allegro.pl REST API created to practice my documentation and Java skills and fill specific use cases in my other projects.</p>
-                       </div>                                              
-                        <div class="project-box-tags">
-                                <span class="primary-skill-tag">Java</span>                            
-                                <span class="secondary-skill-tag">Docs</span>                                                        
-                                <span class="tetriary-skill-tag">REST</span>                            
-                        </div>                        
-                        <div class="project-box-more">
-                            <span class="project-box-links"><i class="fab fa-github"></i></span>
-                            <span class="project-box-links">docs</span>
-                            <span class="project-box-links">more</span>
-                        </div>
-                        <div class="project-box-stats">                         
-                                <span class="updated">Updated: 18d ago</span>
-                                <span class="updated">Commits: 64</span>                            
-                        </div>
-                   </div>                                   
-                </div>
-                <div class="section-title">see more</div>  
+    <wrapper>
+        <section id="hello">
+            <!-- BACKGROUND
+                <i class="fas fa-code" id="hello-bg"></i>
+            -->            
+            <div class="flex-center">
+                <h1>hello <strong>world</strong></h1>         
+                <p class="hello-name">I'm Marcin Jerzak</p>       
+                <p class="hello-line">Sales Executive by day</p>       
+                <p class="hello-line">Full-stack developer by night</p>       
+                <p class="break20"></p>                  
+                <p class="hello-line"><i class="fas fa-map-marker-alt"></i> Warsaw, Poland</p>                       
+                <p class="hello-line"><i class="fab fa-github"></i> Github</p>                       
+                <p class="hello-line"><i class="far fa-envelope"></i> E-mail</p>                       
             </div>            
+            <div class="scroll-down">
+                <a href="#about"><i class="fas fa-angle-double-down"></i></a>                
+            </div>
         </section>
-
-    </main>
+        <section id="skills">                        
+            <div id="about">
+                <h1>About me</h1>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>            
+            <div id="skill-list">
+                <div class="container">
+                        <ol class="odd">
+                            <li class='hex null-hex'></li>
+                            <li class='hex'></li>
+                            <li class='hex'></li>
+                            <li class='hex'></li>
+                        </ol>
+                        <ol class="even">
+                            <li class='hex'><i class="fab fa-aws"></i></li>
+                            <li class='hex'></li>
+                            <li class='hex'></li>
+                            <li class='hex'></li>
+                            <li class='hex null-hex'></li>
+                        </ol>  
+                        <ol class="odd">
+                            <li class='hex'></li>
+                            <li class='hex'></li>
+                            <li class='hex'></li>
+                            <li class='hex'></li>
+                            <li class='hex'></li>                            
+                        </ol>
+                        <ol class="even">
+                            <li class='hex'></li>
+                            <li class='hex'></li>
+                            <li class='hex'></li>
+                            <li class='hex'></li>
+                        </ol>  
+                        <ol class="odd">
+                                <li class='hex null-hex'></li>
+                                <li class='hex'></li>
+                                <li class='hex'></li>
+                                <li class='hex'></li>
+                            </ol>
+                </div>                
+            </div>
+            
+        </section>
+        <section id="projects">            
+            <div id="project-selector">
+                <h1>projects</h1>
+            </div>
+            <div id="project-box-wrapper">
+                    <div class="project-box">
+                        <div class="project-box-title">allegro.pl API client for Java</div>                       
+                        <div class="project-box-description">
+                             <p>Java wrapper for allegro.pl REST API created to practice my documentation and Java skills and fill specific use cases in my other projects.</p>
+                        </div>                                              
+                         <div class="project-box-tags">
+                                 <span class="primary-skill-tag">Java</span>                            
+                                 <span class="secondary-skill-tag">Docs</span>                                                        
+                                 <span class="tetriary-skill-tag">REST</span>                            
+                         </div>                        
+                         <div class="project-box-more">
+                             <span class="project-box-links"><i class="fab fa-github"></i></span>
+                             <span class="project-box-links">docs</span>
+                             <span class="project-box-links">more</span>
+                         </div>
+                         <div class="project-box-stats">                         
+                                 <span class="updated">Updated: 18d ago</span>
+                                 <span class="updated">Commits: 64</span>                            
+                         </div>
+                    </div>                                   
+                 </div>
+        </section>
+    </wrapper>
     
     <script>
         if('serviceWorker' in navigator) {
