@@ -8,21 +8,21 @@ $screen-xl-min: 1200px;
         @content;
     }
  }
- 
+
  // Medium devices
  @mixin md {
     @media (min-width: #{$screen-md-min}) {
         @content;
     }
  }
- 
+
  // Large devices
  @mixin lg {
     @media (min-width: #{$screen-lg-min}) {
         @content;
     }
  }
- 
+
  // Extra large devices
  @mixin xl {
     @media (min-width: #{$screen-xl-min}) {
@@ -46,13 +46,23 @@ $colors: (
 %flex-center {
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
 }
 %flex {
-    display: flex;       
+    display: flex;
     flex-wrap: wrap;
-    flex-direction: row;    
-    align-content: flex-start;        
+    flex-direction: row;
+    align-content: flex-start;
+}
+
+%pill {
+    padding: 2px;
+    padding-left: 9px;
+    padding-right: 11px;
+    border-radius: 50px;
+    font-family: 'Space Mono', monospace;
+    font-size: 1rem;
+    color: color(text-light);
 }
 
 @import url('https://fonts.googleapis.com/css?family=Karla|Space+Mono');
@@ -64,29 +74,29 @@ $colors: (
 body, html {
     height: 100%;
     margin: 0;
-    padding: 0;    
+    padding: 0;
 }
 
 body {
     margin: 0;
     padding: 0;
-    background: color(darkest);    
-    font-family: 'Karla', sans-serif;    
+    background: color(darkest);
+    font-family: 'Karla', sans-serif;
     font-size: 1rem;
-    color: color(text-light);        
+    color: color(text-light);
 }
 
 .flex-center {
     @extend %flex-center;
-    flex-direction: column;    
+    flex-direction: column;
 }
 
-.scroll-down {    
+.scroll-down {
     position: absolute;
     bottom: 30px;
     font-size: 2.5rem;
     animation: rotation 2s infinite linear;
-    a:visited { 
+    a:visited {
         color: color(text-light);
       }
 }
@@ -109,14 +119,14 @@ nav {
 burger {
     position: fixed;
     top: 30px;
-    right: 30px;    
-    z-index: 9;    
+    right: 30px;
+    z-index: 9;
     font-size: 2.7rem;
     color: color(primary-lighter);
 }
 wrapper {
     @extend %flex-center;
-    flex-direction: column;        
+    flex-direction: column;
     section {
         @include sm{
             width: 100vw;
@@ -142,11 +152,11 @@ wrapper {
             font-size: 9rem;
             font-weight: 400;
             margin: 0;
-            text-align: center;          
-            line-height: 0.75;  
+            text-align: center;
+            line-height: 0.75;
         }
         #hello-bg{
-            
+
             position: absolute;
             top:20%;
             color: color(primary-light);
@@ -159,7 +169,7 @@ wrapper {
         .hello-name {
             font-size: 2.2rem;
             font-weight: 400;
-            
+
         }
         .hello-line {
             font-family: 'Space Mono';
@@ -169,35 +179,35 @@ wrapper {
             }
         }
     }
-    #skills {                
-        height: 100vh;            
+    #skills {
+        height: 100vh;
         @extend %flex;
         align-items: center;
         div {
-            padding: 30px;            
-        }        
-        #about {            
-            flex-grow: 1;                              
-            text-align: justify; 
-            flex-basis: 200px;                   
+            padding: 30px;
+        }
+        #about {
+            flex-grow: 1;
+            text-align: justify;
+            flex-basis: 200px;
             @include md{
                 border-width: 0 2px 0 0;
                 border-style: dashed;
-                border-color: color(primary-light);   
+                border-color: color(primary-light);
             }
             h1{
                 font-family: "Space Mono";
             }
         }
-        #skill-list{            
-            flex-grow: 2;            
+        #skill-list{
+            flex-grow: 2;
             margin-left: 1.5rem;
             flex-basis: 600px;
             @extend %flex-center;
-            $hex-size: 60px;                        
-                .container {                    
-                    line-height: 1.3;                    
-                    
+            $hex-size: 60px;
+                .container {
+                    line-height: 1.3;
+
                 }
                 ol.even {
                     position: relative;
@@ -215,7 +225,7 @@ wrapper {
                     margin-left: -3px;
                     width: $hex-size; height: ($hex-size * 1.7);
                     border-radius: 2px;
-                    background: color(primary);                    
+                    background: color(primary);
                     transform: rotate(-90deg);
                     display: inline-block;
                     margin-right: ($hex-size / 1.30);
@@ -255,37 +265,111 @@ wrapper {
     #projects {
         height: 100vh;
         @extend %flex;
-        align-items: center;                
+        align-items: center;
         .section-title {
-            width: 100%;            
+            width: 100%;
             top: 100px;
         }
         #project-selector {
+            flex-grow: 1;
+            text-align: justify;
             flex-basis: 200px;
-            flex-grow: 1;            
-            p{
-                width: 100%;
-                font-stretch: expanded;
+            @include md{
+                border-width: 0 2px 0 0;
+                border-style: dashed;
+                border-color: color(primary-light);
+            }
+            h1{
+                font-family: "Space Mono";
             }
         }
         #project-box-wrapper{
-            flex-basis: 500px;
-            flex-grow: 3;
+            flex-grow: 2;
+            margin-left: 1.5rem;
+            flex-basis: 600px;
+            @extend %flex;
+            .project-box {
+                max-width: 300px;
+                box-shadow:0px 13px 21px -5px rgba(0, 0, 0, 0.3);
+                border-style: solid;
+                border-width: 1px;
+                border-radius: 10px;
+                border-color: color(contour);
+                background-color: color(text-light);
+                color: color(text-dark);
+                padding: 1rem;
+                margin: 5px;
+            }
+            .project-box-title {
+                font-size: 1.3rem;
+                font-weight: bold;
+            }
+            .project-box-description {
+                margin-bottom: 0px;
+            }
+            .project-box-tags {
+                font-size: 1.3rem;
+                margin-top: 0px;
+                color: color(text-light);
+                span {
+                    @extend %pill;
+                }
+                .primary-skill-tag{
+                    background-color: color(primary-light);
+                }
+                .secondary-skill-tag{
+                    background-color: color(primary-lighter);
+                }
+                .tetriary-skill-tag{
+                    background-color: color(contour);
+                }
+            }
+            .project-box-stats{
+                margin-top: -15px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: baseline;
+                padding-right: 20px;
+                .updated {
+                    font-size: 0.6rem;
+                    padding-right: 5px;
+                }
+            }
+            .project-box-more {
+                width: 85%;
+                //margin-top: -15px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: baseline;
+                color: color(text-light);
+                .updated {
+                    font-size: 0.6rem;
+                    padding-right: 5px;
+                }
+                .project-box-links {
+                    @extend %pill;
+                    background-color: color(darkest);
+                    //margin-right: 3rem;
+                    margin-left: 0.3rem;
+                }
+            }
         }
     }
 }
 
 @keyframes rotation {
-    0%   { 
-        opacity: 0.4;         
+    0%   {
+        opacity: 0.4;
     }
-    50% {        
-        opacity: 1; 
-        transform: scale(1.1);   
-        bottom: 50px;             
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+        bottom: 50px;
     }
-    100% { 
-        opacity: 0.4; 
+    100% {
+        opacity: 0.4;
         transform: scale(1);
     }
 }
