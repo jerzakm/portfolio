@@ -1,0 +1,64 @@
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+}
+
+// Medium devices
+@mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+}
+
+// Large devices
+@mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+}
+
+// Extra large devices
+@mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+}
+
+$colors: (darkest: #212121,
+primary: #F44336,
+primary-light: #FF5252,
+primary-lighter: rgb(255, 124, 124),
+primary-lightest: rgb(248, 221, 221),
+text-light: #FFFFFF,
+text-dark: #212121,
+text-dark-lighter: #e0dddd,
+background-light: #FFFFFF,
+contour: rgb(233, 227, 227));
+
+@import url('https://fonts.googleapis.com/css?family=Karla|Space+Mono');
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: color(darkest);
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    color: color(text-light);
+}

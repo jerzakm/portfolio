@@ -1,0 +1,33 @@
+nav {
+
+
+    a {
+        padding-right: 15px;
+        padding-top: 5px;
+        color: color(primary-lightest);
+    }
+}
+
+burger {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 9;
+    font-size: 2.7rem;
+    color: color(primary-lighter);
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 30px;
+    font-size: 2.5rem;
+    animation: rotation 2s infinite linear;
+
+    a:visited {
+        color: color(text-light);
+    }
+}
+
+.scroll-down:hover {
+    color: color(primary);
+}

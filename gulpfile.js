@@ -40,7 +40,7 @@ function concatCSS() {
         .pipe(cleanCSS())
         .pipe(sourcemaps.write('src/maps/'))
         .pipe(lineec())
-        .pipe(gulp.dest('src/scss/'));
+        .pipe(gulp.dest('src/dist/css'));
 }
 
 gulp.task('sass:watch', function () {
@@ -64,6 +64,7 @@ function watch() {
     browserSync.reload("*.scss");
 
     gulp.watch('src/scss/*.scss', css);
+    gulp.watch("src/css/*.css", concatCSS);
 }
 
 exports.css = css;
